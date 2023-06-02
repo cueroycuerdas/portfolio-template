@@ -3,7 +3,7 @@ export interface PortfolioPageItem {
   title?: string;
   subTitle1?: string;
   subTitle2?: string;
-  contents: string | string[];
+  contents: string | (string | string[])[];
   backgroundColor?: string;
   link?: string;
   linkText?: string;

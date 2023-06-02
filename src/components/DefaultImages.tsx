@@ -9,51 +9,38 @@ import universe from '../assets/ai-generated/universe.jpg';
 import beachDark from '../assets/ai-generated/beach-dark.jpg';
 import education from '../assets/ai-generated/education.jpg';
 
-import concordia from '../assets/logos/concordia.png';
-import uhavana from '../assets/logos/universidad_de_la_habana.png';
-
-import amyuni from '../assets/logos/amyuni.png';
-import gmixon from '../assets/logos/gmixon.png';
-import HPE from '../assets/logos/Hewlett_Packard_Enterprise.png';
-import ICRT from '../assets/logos/icrt.png';
 import coffee from '../assets/coffee.jpg';
 
-import aos from '../assets/portfolio/aruba-os.png';
-import newdj from '../assets/portfolio/newdj.png';
-import radiosys from '../assets/portfolio/radiosys.bmp';
-import amyuniPdf from '../assets/portfolio/amyuni-pdf-converter.png';
-import amyuniPdf2 from '../assets/portfolio/amyuni-pdf-converter-2.png';
-import amyuniPdfCreator from '../assets/portfolio/amyuni-pdf-creator.jpg';
-import arubaCnx from '../assets/portfolio/aruba-cnx.png';
-import portfolioTemplate from '../assets/portfolio/portfolio-template.png';
+import CueroCuerdas from '../assets/igmar/cuero-y-cuerdas.jpg';
+import portada from '../assets/igmar/portada.jpg';
+import meltingGuitar from '../assets/igmar/melting-guitar.png';
+import musicDarkBlue from '../assets/igmar/background-music-dark-blue.jpg';
+import instruments from '../assets/igmar/instruments.jpg';
+import issogno from '../assets/igmar/issogno.jpg';
+import trio from '../assets/igmar/trio.png';
+import estudio from '../assets/igmar/estudio.jpg';
 
-import avatar from '../assets/avatar-yms.jpg';
+import avatar from '../assets/igmar/avatar.jpg';
 
 export class DefaultImages {
   static MathDark2 = mathDark2;
   static MathDark1 = mathDark1;
   static Music = music;
   static Education = education;
-  static Concordia = concordia;
-  static UH = uhavana;
+  static CueroCuerdas = CueroCuerdas;
   static Math = math;
   static Networks = networks;
   static Signals = signals;
   static SignalsDark = signalsDark;
   static Universe = universe;
-  static Amyuni = amyuni;
-  static Gmixon = gmixon;
-  static HPE = HPE;
-  static ICRT = ICRT;
   static Coffee = coffee;
   static BeachDark = beachDark;
-  static RadioSys = radiosys;
-  static AOS = aos;
-  static NewDJ = newdj;
-  static AmyuniPdfConverter = amyuniPdf;
-  static AmyuniPdfConverter2 = amyuniPdf2;
-  static AmyuniPdfCreator = amyuniPdfCreator;
+  static Portada = portada;
   static Avatar = avatar;
-  static ArubaCNX = arubaCnx;
-  static PortfolioTemplate = portfolioTemplate;
+  static MeltingGuitar = meltingGuitar;
+  static MusicDarkBlue = musicDarkBlue;
+  static Instruments = instruments;
+  static Issogno = issogno;
+  static Trio = trio;
+  static Estudio = estudio;
 }

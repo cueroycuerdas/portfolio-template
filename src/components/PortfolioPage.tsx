@@ -20,10 +20,11 @@ const SideImage = styled(Box)<{
   backgroundImage?: string;
   backgroundColor?: string;
 }>(({ backgroundImage, backgroundColor }) => ({
-  height: '300px',
+  height: '400px',
   backgroundSize: 'contain',
   backgroundRepeat: 'no-repeat',
   backgroundImage: `url(${backgroundImage})`,
+  backgroundPosition: 'center',
   backgroudColor: `${backgroundColor}`
 }));
 
@@ -41,7 +42,13 @@ const PageItem = ({
   link,
   linkText
 }: PageItemProps) => {
-  const _contents = Array.isArray(contents) ? contents : [contents];
+  const _contents: (string | string[])[] = Array.isArray(contents) ? contents : [contents];
+
+  // if at least one item is an array, we treat all of it as a table
+  const columns = _contents.reduce(
+    (columns: number, item: string | string[]) => (Array.isArray(item) ? Math.max(item.length, columns) : 0),
+    0
+  );
 
   const textContents = (
     <>
@@ -60,11 +67,39 @@ const PageItem = ({
         </Link>
       )}
       <div style={{ paddingTop: '10px' }}>
-        {_contents.map((paragraph) => (
-          <Typography component='p' paddingTop={'10px'}>
-            {paragraph}
-          </Typography>
-        ))}
+        {columns > 0 ? (
+          <table style={{ width: '80%' }}>
+            {_contents.map((row) => (
+              <tr>
+                {Array.isArray(row) ? (
+                  row.map((cell: string) => (
+                    <td>
+                      {
+                        <Typography component='p' paddingTop={'10px'}>
+                          {cell}
+                        </Typography>
+                      }
+                    </td>
+                  ))
+                ) : (
+                  <td colSpan={columns}>
+                    {
+                      <Typography component='p' paddingTop={'10px'}>
+                        {row}
+                      </Typography>
+                    }
+                  </td>
+                )}
+              </tr>
+            ))}
+          </table>
+        ) : (
+          _contents.map((paragraph) => (
+            <Typography component='p' paddingTop={'10px'}>
+              {paragraph}
+            </Typography>
+          ))
+        )}
       </div>
     </>
   );

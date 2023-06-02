@@ -3,152 +3,164 @@ import { AppConfig } from './AppData.interface';
 
 // json-like object for app configuration
 export const appConfig: AppConfig = {
-  title: "Yoisel's Portfolio",
+  title: "Igmar's Portfolio",
   avatarImage: DefaultImages.Avatar,
   social: {
-    github: 'https://github.com/yoisel',
-    linkedin: 'https://www.linkedin.com/in/yoisel/',
-    stackoverflow: 'https://stackoverflow.com/users/501196/yms'
+    linkedin: 'https://www.linkedin.com/in/igmar-melis-447b22269'
   },
   sections: [
     {
       id: 'about',
-      title: 'About Me',
+      title: 'About me',
+      backgroundImage: DefaultImages.Universe,
+      portfolioPageItems: [
+        {
+          contents: [
+            "I am a skilled musician with expertise in live performances on multiple instruments and computer-assisted music composition. I bring a unique blend of traditional and digital approaches to my craft. My primary skills are in audio recording and editing, using digital applications like Cool Edit/Audition, Cubase, Logic Audio Platinum, and Protools. This proficiency allows me to bring your musical ideas to life with exceptional clarity and production quality.",
+            "As a mixing and mastering specialist for the Issogno Music project, I have honed my skills in music production, arranging, and engineering.",
+            "I have worked as a freelance composer, creating soundtracks for various media projects, including animation cartoons, short films, TV series, and documentaries. My compositions capture the essence of visual storytelling and add a captivating dimension to the viewer's experience. I founded and directed the music band 'Cuero y Cuerdas' and contributed to the soundtrack of the film 'Una noche.'",
+            "Throughout my career, I have collaborated with recording studios, participated in music video production, and provided musical accompaniment for diverse projects. With a solid educational background in music and high school education, this training has equipped me with a deep understanding of music theory, technique, and interpretation, enhancing my abilities as a musician and composer. I bring a combination of creativity, technical expertise, and professionalism to every project I undertake.",
+            "In summary, I am a versatile musician with a passion for creating impactful and emotionally resonant music that leaves a lasting impression on listeners."
+          ],
+          image: DefaultImages.Avatar
+        }
+      ]
+    },
+    {
+      id: 'skills',
+      title: 'Skills',
       backgroundImage: DefaultImages.BeachDark,
       portfolioPageItems: [
         {
           contents: [
-            `I am a Full Stack software developer with more than 15 years of experience, including a few leading teams of developers. 
-             I am particularly conscious about security and code quality in the products I work on. 
-             I enjoy solving problems, facing challenges and learning new technologies.`,
-            'I like biking, light jogging, science-fiction - fantasy books and films.',
-            'I learned my first programming language (Logo) at age 11, then moved into MSX Basic and Pascal by age 16. I found my passion in programming and I have never looked back since then.',
-            'I was born in Cuba, an island in the Caribbean Sea, and I currently live in Montreal, Canada.'
+            '- Live performance of musical instruments such as:',
+            ['\u2022 Bass', '\u2022 Guitar'],
+            ['\u2022 Piano', '\u2022 Congas'],
+            ['\u2022 Timbales', '\u2022 Drums'],
+            ['\u2022 Trumpet', '\u2022 other handheld and miscellaneous instruments'],
+            '- Computer-assisted music composition.',
+            '- Audio recording and editing using digital audio applications such as:',
+            ['\u2022 Cool Edit/Audition', '\u2022 Cubase'],
+            ['\u2022 Nuendo', '\u2022 Logic Audio Platinum'],
+            ['\u2022 Reason', '\u2022 Fruity Loops'],
+            ['\u2022 Harmony Assistent', '\u2022 Protools'],
+            ['\u2022 Reaper']
           ],
-          image: DefaultImages.Coffee
+          image: DefaultImages.Instruments
         }
       ]
     },
     {
       id: 'experience',
-      title: 'Recent Roles',
-      backgroundImage: DefaultImages.MathDark1,
-      portfolioPageItems: [
-        {
-          subTitle1: 'April 2016 - Today',
-          title: 'Senior Software Developer / Tech Lead',
-          subTitle2: 'Hewlett Packard Enterprise - Montreal, Canada',
-          link: 'https://www.hpe.com',
-          linkText: 'www.hpe.com',
-          // \u2022 unicode character for bullet point
-          contents: [
-            '\u2022 Technical leading on the development of a React-based components library for Aruba Central, a cloud-based Network Management System, with a distributed team across multiple geographies.',
-            '\u2022 Development of software modules for Aruba Central and Aruba Instant On.',
-            '\u2022 Development of software modules for Aruba OS, a Linux-based embedded operating system for managed wireless networks.',
-            '',
-            'Technologies used:',
-            '    React, MUI, styled-components, Storybook, Cypress, Jenkins, TypeScript, HTML, CSS, SCSS,',
-            '    Docker, Angular, AngularJS, Javascript, ES6, NodeJS, Java, Linux-based Embedded Systems,',
-            '    ANSI C, Network protocols, Wifi (802.11) specifications.'
-          ],
-          image: DefaultImages.HPE
-        },
-        {
-          subTitle1: '2009 - 2016',
-          title: 'Senior Software Developer / Team Lead',
-          subTitle2: 'Amyuni Technologies',
-          link: 'https://www.amyuni.com',
-          linkText: 'www.amyuni.com',
-          contents: [
-            `Amyuni Technologies is a software company specialized in the development of applications and libraries for end users and developers that facilitates processing and producing digital documents such as PDF, PostScript and Microsoft XPS.`,
-            '\u2022 Team leader since January 2013, controlling the development process and keeping track of the status of each project, planning and prioritizing the tasks for the development team, establishing and updating the protocol for quality assurance and participating in the hiring process for new developers.',
-            '\u2022 Development of software modules for Amyuni PDF libraries using several technologies and programming languages (.net, C#, C, C++, ActiveX, Windows Driver Kit, Task Parallel Libraries, Async-programming).',
-            '\u2022 Development of a JavaScript interpreter and its corresponding Document Object Model for PDF dynamic forms (C++, yacc, bison, ECMA-Script specifications).',
-            '\u2022 Development of a Windows Embedded CE platform with several customized software modules.',
-            '\u2022 Development of several software modules for iOS and Mac OS X.'
-          ],
-          image: DefaultImages.Amyuni
-        }
-      ]
-    },
-    {
-      id: 'projects',
-      title: 'Recent Projects',
-      description: 'Some examples of project where I have participated as part of a team',
+      title: 'Professional Experience',
       backgroundImage: DefaultImages.SignalsDark,
       portfolioPageItems: [
         {
-          title: 'Aruba Central',
-          link: 'https://www.arubanetworks.com/video/?v=Products%20and%20Solutions/aruba_next_gen_central_-1.mp4',
-          subTitle2: 'HPE Aruba Networking, Montreal, Canada',
+          subTitle1: '2010 - Current',
+          title: 'Mixing and mastering specialist',
+          link: 'https://www.facebook.com/issogno',
+          subTitle2: 'Issogno Music project',
           contents: [
-            `Aruba Central is a cloud-based network management platform that offers centralized control and visibility
-             over Aruba networking devices and services, providing a unified interface for monitoring and configuring
-             Aruba switches, access points, and controllers across distributed locations.`,
-            `With Aruba Central, organizations can benefit from features such as network monitoring, configuration management,
-            firmware updates, role-based access control, analytics, and reporting. 
-            The cloud-based nature of Aruba Central enables easy scalability.`,
-            'Development for Aruba Central involves Typescript, React, Angular, Grapql, Kubernetes, among other toolchains.'
+            'Mixing and mastering engineer, music producer and arranger for the Issogno Music project.',
+            "Issogno is an online audio-production company made up Composers, Musicians, Arrangers and Sound Engineers of different nationalities, dedicated to exercising each of these disciplines to take the final product to the next level. Compositions tailored to the client's needs, musical arrangements that meet their demands, as well as recording, editing, post-production, mixing and mastering."
           ],
-          image: DefaultImages.ArubaCNX
+          image: DefaultImages.Issogno
         },
         {
-          title: 'Aruba OS',
-          subTitle2: 'HPE Aruba Networking, Montreal, Canada',
-          link: 'https://www.arubanetworks.com/resource/aos-10-at-a-glance',
+          subTitle1: '2019 - 2020',
+          title: 'Freelance composer',
           contents: [
-            'Aruba OS is a Network Management System for HPE Aruba Access Points and Controllers.',
-            'A web application is provided at each management level.',
-            'Additional web applications serve as troubleshooting tools.',
-            'Development for Aruba OS involves Embedded Linux, ANSI C, AngularJS, Docker, among other toolchains.'
+            'Freelance songwriter for multiple soundtracks, for example:',
+            'Soundtrack for the animation cartoon "Las Brujas" by ICRT Animation Studios (Cuban Institute of Radio and Television).',
+            'Sound effects and soundtrack for the short film "Miedo" (independent cinema).',
+            'Soundtrack for the animation cartoon "Los Ninjas" by ICRT Animation Studios.',
+            'Soundtrack for the TV series "Tras la Huella", episodes "Combustión." and "Obsesión."',
+            'Music composer for the National Gymnastics School.'
           ],
-          image: DefaultImages.AOS
+          image: DefaultImages.Music
         },
         {
-          title: 'Amyuni PDF Converter',
-          subTitle2: 'Amyuni Technologies, Montreal, Canada',
-          contents:
-            'Amyuni PDF Converter is a software tool that allows users to create and edit digital documents such as PDF, PostScript or XPS. It is composed by a Microsoft Certified virtual printer driver that developers can use and control from a Windows application. It was implemented in a mix of C and C++',
-          image: DefaultImages.AmyuniPdfConverter2
+          subTitle1: '2009 - 2012',
+          title: 'Band director, composer',
+          link: 'https://www.facebook.com/CueroyCuerdas',
+          contents: [
+            '- Founded the music band Cuero y Cuerdas.',
+            '\u2022 Presentations of The Band "Cuero y Cuerdas"',
+            '\u2022 Performance of Cuero y Cuerdas at Meliá Hotels in Varadero.',
+            '\u2022 Release of the music video "Mucho mas" on Educational Channel in Cuban state television.',
+            '\u2022 Radio and television appearances for Cuero y Cuerdas.',
+            '\u2022 Soundtrack for the film "Una noche," a co-production of ICAIC and Lucy Mulloy.'
+          ],
+          image: DefaultImages.CueroCuerdas
         },
         {
-          title: 'Amyuni PDF Creator',
-          subTitle2: 'Amyuni Technologies, Montreal, Canada',
-          contents:
-            'Amyuni PDF Creator is a Windows-based software library that allows developers to generate, edit, display and print PDF documents programmatically. This library provides developers with control over document formatting, page layouts, text and image insertion, watermarking, encryption, and digital signature capabilities, supporting a wide range of programming languages and frameworks (.net, C++, COM).',
-          image: DefaultImages.AmyuniPdfCreator
+          subTitle1: '2007 - 2009',
+          title: 'Producer / Music Composer / Interpreter',          
+          contents: [
+            'Accompanying instrumentalist (Piano) at Jojazz 2008.',
+            'Technical Services for Recording Studios at the Cuban Institute of Radio and Television (Servers, and Recording Workstations).',
+            'Soundtrack for the short film "La Madre".',
+            '"Eighth New Filmmakers Showcase" ICAIC (Cuban Institute of Cinematographic Arts and Industry) 2009.',
+            'HPH-Records Studio and Ávaco Studio.',
+            'WEVA (Wedding and Events Video-Cameraman Association).',
+            'Recordings for small-format groups.',
+            'Production of Music Video Clips (Audio and Video Editing).',
+            'Voice recording and Music composition for documentaries.',
+            'Musical accompaniment. Electric double bass (Baby bass).',
+            'Recording of an album for soloist Osdalgia.',
+            'Bassist for the band La Novena de Dantes.',
+            'Bassist for the band "D\'Caridad".'
+          ],
+          image: DefaultImages.Estudio
         },
         {
-          title: 'Web portfolio template',
-          link: 'https://github.com/yoisel/portfolio-template',
-          subTitle2: 'Open Source',
-          contents:
-            'An unencumbered portfolio template based on React and Mui. It provides a responsive design and it is offered with MIT open source license',
-          image: DefaultImages.PortfolioTemplate
+          subTitle1: '2004 - 2007',
+          title: 'Music composition, Editing, and Software Development Collaboration.',     
+          subTitle2: 'Cuban Institute of Radio and Television (ICRT)',     
+          contents: [
+            'Accompanying instrumentalist (Piano) at Jojazz 2008.',
+            'Technical Services for Recording Studios at the Cuban Institute of Radio and Television (Servers, and Recording Workstations).',
+            'Soundtrack for the short film "La Madre".',
+            '"Eighth New Filmmakers Showcase" ICAIC (Cuban Institute of Cinematographic Arts and Industry) 2009.',
+            'HPH-Records Studio and Ávaco Studio.',
+            'WEVA (Wedding and Events Video-Cameraman Association).',
+            'Recordings for small-format groups.',
+            'Production of Music Video Clips (Audio and Video Editing).',
+            'Voice recording and Music composition for documentaries.',
+            'Musical accompaniment. Electric double bass (Baby bass).',
+            'Recording of an album for soloist Osdalgia.',
+            'Bassist for the band La Novena de Dantes.',
+            'Bassist for the band "D\'Caridad".'
+          ],
+          image: DefaultImages.Networks
+        },
+        {
+          subTitle1: '2002 - 2004',
+          title: 'Guitarist and Vocalist, Trio "Los Prados"',     
+          subTitle2: 'Producer: CPMT "Ignacio Piñeiro" (Artists Company)',     
+          contents: [],
+          image: DefaultImages.Trio
         }
       ]
     },
     {
       id: 'education',
       title: 'Education',
-      backgroundImage: DefaultImages.Universe,
+      backgroundImage: DefaultImages.MusicDarkBlue,
       portfolioPageItems: [
         {
-          subTitle1: '2010 - 2011',
-          title: 'Concordia University, Montreal, Canada',
-          subTitle2: 'Master in Applied Computer Science',
-          link: 'https://www.concordia.ca/',
-          linkText: 'www.concordia.ca',
+          subTitle1: '2006 - 2008',
+          title: 'High-school degree',
+          subTitle2: 'Faculty for workers “Capitán San Luis”. Havana, Cuba',
           contents: '',
-          image: DefaultImages.Concordia
+          image: DefaultImages.Education
         },
         {
-          subTitle1: '2001-2004',
-          title: 'Havana University (Universidad de la Habana)',
-          subTitle2: 'Bachalor in Computer Science',
-          link: 'https://www.uh.cu',
+          subTitle1: '1999 - 2004',
+          title: 'Guitar, Elementary Level',
+          subTitle2: 'Fernando Carnicer National Art Center, Havana, Cuba',
           contents: '',
-          image: DefaultImages.UH
+          image: DefaultImages.MeltingGuitar
         }
       ]
     }
